@@ -619,7 +619,7 @@ footer {
     gap: 0;
 }
 #intro-text {
-    font-size: 1.5rem;
+    font-size: 20px;
     margin: auto;
     padding-top: 4rem;
 }
@@ -718,6 +718,9 @@ footer{
 .Logos {
     width: auto;
     margin-top: 5rem ;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    gap: 10px;
 }
 
 #Personal, #School, #Work, #Phone {
@@ -760,6 +763,12 @@ header {
     flex-wrap: wrap; /* Allow wrapping of nav items if they don't fit */
     gap: 20px; /* Adjust spacing slightly for smaller screens */
     justify-content: center; /* Center the nav items */
+}
+
+@media (max-width: 350px) {
+    #intro-text>p {
+        font-size: 1rem;
+    }
 }
 
 }
