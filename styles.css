@@ -1,0 +1,729 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family:  'Agency FB','Arial', sans-serif;
+    color: #54162c;
+    background-color: #f9f9f9;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #54162c;
+    padding: 1.5rem 1rem 1.5rem 1rem ;
+    color: white; 
+    font-family: 'Harlow Solid Italic'; /* Fallback font in case it doesn't load */
+    font-style: italic; /* Ensures it stays italicized */
+}
+    
+footer {
+    background-color: #54162c; /* Maroon color */
+    height: 36px; /* Thickness of the line */
+    width: 100%; /* Full width */
+    position: fixed; /* Keeps it at the bottom of the page */
+    bottom: 0; /* Aligns it to the very bottom */
+}
+
+#logo {
+    margin: 0;
+    font-size: 24px;
+
+}
+
+#navbar {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Home Page*/
+#main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* About Me Page*/
+#main-content-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem 4rem 0rem 4rem;
+}
+
+/* Contact Page*/
+#main-content-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto auto;
+}
+
+#main-content-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 1rem;
+}
+
+#MyGallery {
+    text-align: center;
+    color: black;
+    grid-column: 2 / 4;
+    grid-row: 1;
+}
+
+#MyGallery h3 {
+ font-weight: bold;
+ text-decoration: underline;
+ font-size: 1.5rem;
+}
+
+#MyGallery p {
+    font-size: 1.3rem;
+    margin-top: -1rem;
+}
+
+
+#main-content-3 h2 {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    font-size: 3rem;
+    margin-top: 1rem;
+    letter-spacing: .4rem;
+}
+
+
+/* Image on the left */
+#profile-picture {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 23px;
+    border: 3px solid #54162c;
+}
+
+#profile-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10rem;
+    gap: 2rem;
+
+}
+/* Text on the right */
+#text-section {
+    max-width: 1280px;
+}
+
+#intro-text {
+    font-size: 26px;
+    line-height: 1.6;
+    margin: 1rem -7rem 1rem 3rem;
+
+}
+
+/* This is the AboutMeSection*/
+#AboutMeSection {
+    background-color: #54162c;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 0rem auto auto 2rem;
+    grid-row: 1 / 3;
+}
+
+#AboutMeSection>img {
+   width: 15.5rem; 
+   height: 15.5rem;
+   margin-left: .4rem;
+}
+
+#AboutMeSection>h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* This is the Work*/
+#WorkExperience {
+    background-color: #54162c;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    grid-row: 2;  
+    width: 60%;
+    margin-left: 3rem;
+}
+
+#WorkExperience>h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* This is the Education*/
+#Education {
+    background-color: #54162c;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    grid-row: 2;
+    grid-column: 3;
+    margin-left: 3rem;
+    width: 60%;
+}
+
+#Education>h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+/*This is the Goals Section*/
+#Goals {
+    background-color: #54162c;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    grid-row: 1;
+    grid-column: 4;
+    margin-left: 3rem;
+    width: 60%;
+}
+
+#Goals>h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+/*This is the achievements Section*/
+#Achievements {
+    background-color: #54162c;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    grid-row: 2;
+    grid-column: 4;
+    margin-left: 3rem;
+    width: 60%;
+}
+
+#Achievements>h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#LogoImage {
+    grid-row: 1;
+    grid-column: 2 / 4;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#LogoImage img {
+    max-width: 35%;
+    max-height: 100%;
+}
+
+.Logos {
+    display: grid;
+    grid-column: 2 / 6;
+    grid-row: 2;
+    margin-top: 1rem;
+}
+#Instagram {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    grid-column: 1; 
+    grid-row: 2; 
+    text-align: center; 
+}
+#Instagram img {
+    max-width: 50%; 
+    height: auto;  
+}
+
+#Instagram h3 {
+    font-size: 1.5rem; 
+    margin: 0; 
+    padding-top: 0.5rem; 
+}
+
+#Instagram a {
+    text-decoration: none;
+    color: #54162c;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+#Instagram a:hover {
+    color: limegreen;
+    text-decoration: underline;
+}
+
+#Facebook {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#Facebook img {
+    max-width: 50%;
+    height: auto;
+}
+
+#Facebook h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding-top: 0.5rem;
+}
+
+#Facebook a {
+    text-decoration: none;
+    color: #54162c;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+#Facebook a:hover {
+    color: limegreen;
+    text-decoration: underline;
+}
+
+#Outlook {
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#Outlook img {
+    max-width: 50%;
+    height: auto;
+}
+
+#Outlook h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding-top: 0.5rem;
+}
+
+#Outlook a {
+    text-decoration: none;
+    color: #54162c;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+#Outlook a:hover {
+    color: limegreen;
+    text-decoration: underline;
+}
+
+#Gmail {
+    grid-column: 4;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#Gmail img { 
+    max-width: 60%;
+    height: auto;
+    margin-top: -1rem;
+}
+
+#Gmail h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding-top: 0.5rem;
+}
+#Gmail a {
+    text-decoration: none;
+    color: #54162c;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+#Gmail a:hover {
+    color: limegreen;
+    text-decoration: underline;
+}
+
+
+
+.EmailAccts {
+    display: grid;
+    grid-column: 3 / 5;
+    grid-row: 3 / 5;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    margin-top: 5rem;
+}
+
+#Personal {
+   background-color: #54162c; 
+   color: white;
+   border-radius: 1rem;
+   padding: 0rem 2rem 0rem 2rem;
+   letter-spacing: .2rem;
+}
+
+#School {
+    background-color: #54162c; 
+    color: white;
+    border-radius: 1rem;
+    padding: 0rem 2.5rem 0rem 2.8rem;
+    letter-spacing: .2rem;
+ }
+
+ #Work {
+    background-color: #54162c; 
+    color: white;
+    border-radius: 1rem;
+    padding: 0rem 3rem 0rem 3rem;
+    letter-spacing: .2rem;
+ }
+
+ #Phone {
+    background-color: #54162c; 
+    color: white;
+    border-radius: 1rem;
+    padding: 0rem 6rem 0rem 6rem;
+    letter-spacing: .2rem;
+ }
+
+ .ContactPictures {
+    grid-column: 2 / 6;
+    grid-row: 3 / 5;
+    display: contents;
+ }
+
+ .ContactPictures section {
+    display: flex; /* Use flexbox to center content inside each grid cell */
+    justify-content: center;
+    align-items: center;
+}
+
+ .ContactPictures img {
+    width: 80px;
+    height: auto;
+ }
+
+ #ISLogo1 {
+    grid-column: 2;
+    grid-row: 3;
+    transform: rotate(-15deg);
+ }
+
+ #ContactLogo {
+    grid-column: 5;
+    grid-row: 3;
+    transform: rotate(15deg);
+ }
+
+ #PeterbiltLogo {
+    grid-column: 2;
+    grid-row: 4;
+    transform: rotate(-15deg);
+ }
+
+ #InfoSystemLogo {
+    grid-column: 5;
+    grid-row: 4 ;
+    transform: rotate(15deg);
+ }
+
+ 
+.Pictures {
+    display: grid;
+    text-align: center;
+    grid-column: 1 / 5;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#WorkPics {
+    grid-column: 1; /* Work section in column 1 */
+    display: contents; /* Use the container without adding layout constraints */
+}
+
+#WorkPics h2 {
+    grid-row: 2; /* Place heading in row 2 of column 1 */
+}
+
+#WorkPics img:nth-child(2) {
+    grid-column: 1;
+    grid-row: 3; /* First image in row 3, column 1 */
+}
+
+#WorkPics img:nth-child(3) {
+    grid-column: 1;
+    grid-row: 4; /* Second image in row 4, column 1 */
+}
+
+#WorkPics img:nth-child(4) {
+    grid-column: 1;
+    grid-row: 5; /* Third image in row 5, column 1 */
+}
+
+#FamilyPics {
+    grid-column: 2; /* Family section in column 2 */
+    display: contents;
+}
+
+#FamilyPics h2 {
+    grid-row: 2; /* Place heading in row 2 of column 2 */
+}
+
+#FamilyPics img:nth-child(2) {
+    grid-column: 2;
+    grid-row: 3; /* First image in row 3, column 2 */
+}
+
+#FamilyPics img:nth-child(3) {
+    grid-column: 2;
+    grid-row: 4; /* Second image in row 4, column 2 */
+}
+
+#FamilyPics img:nth-child(4) {
+    grid-column: 2;
+    grid-row: 5; /* Third image in row 5, column 2 */
+}
+
+#ProjectPics {
+    grid-column: 3; /* Projects section in column 3 */
+    display: contents;
+}
+
+#ProjectPics h2 {
+    grid-row: 2; /* Place heading in row 2 of column 3 */
+}
+
+#ProjectPics img:nth-child(2) {
+    grid-column: 3;
+    grid-row: 3; /* First image in row 3, column 3 */
+}
+
+#ProjectPics img:nth-child(3) {
+    grid-column: 3;
+    grid-row: 4; /* Second image in row 4, column 3 */
+}
+
+#ProjectPics img:nth-child(4) {
+    grid-column: 3;
+    grid-row: 5; /* Third image in row 5, column 3 */
+}
+
+#SchoolPics {
+    grid-column: 4; /* School section in column 4 */
+    display: contents;
+}
+
+#SchoolPics h2 {
+    grid-row: 2; /* Place heading in row 2 of column 4 */
+}
+
+#SchoolPics img:nth-child(2) {
+    grid-column: 4;
+    grid-row: 3; /* First image in row 3, column 4 */
+}
+
+#SchoolPics img:nth-child(3) {
+    grid-column: 4;
+    grid-row: 4; /* Second image in row 4, column 4 */
+}
+
+#SchoolPics img:nth-child(4) {
+    grid-column: 4;
+    grid-row: 5; /* Third image in row 5, column 4 */
+}
+
+.Pictures img {
+    max-width: 100%; /* Ensure images scale within the container */
+    height: 200px; /* Set a fixed height */
+    width: 100%; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop images to fit within the dimensions */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+/* Lightbox Styling */
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 4px solid white;
+    border-radius: 10px;
+}
+
+#lightbox.hidden {
+    display: none; /* Hide lightbox initially */
+}
+
+#close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+@media (max-width: 500px) {
+
+#profile-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+}
+#intro-text {
+    font-size: 1.5rem;
+    margin: auto;
+    padding-top: 4rem;
+}
+
+#profile-picture {
+    width: 17rem;
+    height: 17rem;
+}
+
+#main-content {
+    padding-top: 3rem;
+}
+
+#main-content-2 { 
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+#AboutMeSection {
+    width:80% ;
+    margin: auto auto;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;  
+}
+
+#AboutMeSection>img {
+   width: 5rem; 
+   height: 5rem;
+   margin: 0 auto;
+}
+
+p {
+    font-size: 15px;
+}
+
+#AboutMeSection>h2 {
+    font-size: 25px;
+}
+
+#WorkExperience, #Education, #Goals, #Achievenments {
+    width: auto;
+    margin:auto;
+}
+
+footer{
+    position: unset;
+}
+
+#main-content-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+#Personal {
+    width:auto;
+}
+
+.EmailAccts {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+#ISLogo1, #ContactLogo, #PeterbiltLogo, #InfoSystemLogo {
+    display: none;
+}
+
+#main-content-3 h2 {
+    font-size: 4rem;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.Logos {
+    width: auto;
+    margin-top: 5rem ;
+}
+
+
+#Gmail {
+width: 5rem;
+margin: auto;
+padding-top: 10px;
+}
+
+#Instagram, #Facebook, #Outlook {
+    width: 5rem;
+    margin: auto;
+}
+
+#main-content-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Pictures {
+    display: flex;
+    flex-direction: column;
+}
+
+}
