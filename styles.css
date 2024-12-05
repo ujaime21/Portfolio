@@ -657,13 +657,19 @@ footer {
 
 p {
     font-size: 15px;
+    width: auto;
+    margin: 0 auto;
+    line-height: 1;
+    text-align: center;
+    word-wrap: break-word;
+    height: auto;
 }
 
 #AboutMeSection>h2 {
     font-size: 25px;
 }
 
-#WorkExperience, #Education, #Goals, #Achievenments {
+#WorkExperience, #Education, #Goals, #Achievements {
     width: auto;
     margin:auto;
 }
@@ -675,6 +681,13 @@ footer{
 #main-content-3 {
     display: flex;
     flex-direction: column;
+}
+
+#Achievements>h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
 
 #Personal {
@@ -724,6 +737,22 @@ padding-top: 10px;
 .Pictures {
     display: flex;
     flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 10px;
+}
+
+#navbar{
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of nav items if they don't fit */
+    gap: 20px; /* Adjust spacing slightly for smaller screens */
+    justify-content: center; /* Center the nav items */
 }
 
 }
