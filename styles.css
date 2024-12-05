@@ -619,7 +619,7 @@ footer {
     gap: 0;
 }
 #intro-text {
-    font-size: 20px;
+    font-size: 17px;
     margin: auto;
     padding-top: 4rem;
 }
@@ -627,6 +627,8 @@ footer {
 #profile-picture {
     width: 17rem;
     height: 17rem;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 #main-content {
