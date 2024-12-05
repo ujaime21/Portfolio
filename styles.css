@@ -697,6 +697,9 @@ footer{
 .EmailAccts {
     margin-top: 5rem;
     margin-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
 }
 
 #ISLogo1, #ContactLogo, #PeterbiltLogo, #InfoSystemLogo {
@@ -717,11 +720,15 @@ footer{
     margin-top: 5rem ;
 }
 
+#Personal, #School, #Work, #Phone {
+    padding: 1rem;
+    margin: auto;
+}
 
 #Gmail {
 width: 5rem;
 margin: auto;
-padding-top: 10px;
+padding-top: 8px;
 }
 
 #Instagram, #Facebook, #Outlook {
