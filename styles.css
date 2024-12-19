@@ -767,10 +767,4 @@ header {
     justify-content: center; /* Center the nav items */
 }
 
-@media (max-width: 350px) {
-    #intro-text>p {
-        font-size: 1rem;
-    }
-}
-
 }
